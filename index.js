@@ -9,4 +9,19 @@
 // Be hopeful - look toward tomorrow
 
 
-// 
+//
+
+console.log('praise cage')
+
+const headline = document.querySelector('h1')
+
+const content = ['Be still', 'Be thankful', 'Be present', 'Be prayerful', 'Be hopeful']
+
+let i = 0
+const cycleText = () => {
+  headline.textContent = content[i]
+  i = ++i % content.length
+}
+
+cycleText()
+setInterval( cycleText, 2000);
