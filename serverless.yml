@@ -1,0 +1,11 @@
+service: my-app
+provider:
+    name: aws
+
+constructs:
+    landing:
+        type: static-website
+        path: public
+
+plugins:
+    - serverless-lift
